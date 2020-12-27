@@ -33,9 +33,9 @@ In this dataframe the amount of customer from UK is so dominating, so i decide t
 
 ### UK Data
 in this section ill find which class is suitable for each customerID based on RFM Score and the way to determine the RFM score is :
-* Recency = Latest Transaction Date - Last Invoice Data
-* Frequency = count of invoice no. of transaction
-* Monetary = Sum of total spend for each customer id
+- Recency = Latest Transaction Date - Last Invoice Data
+- Frequency = count of invoice no. of transaction
+- Monetary = Sum of total spend for each customer id
 and the the distribution plot of RFM value is like this.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/RFM_distribution.png)
 
@@ -46,9 +46,24 @@ after i get all of that, i sum up the rank value RFM to labeled which class is s
 
 
 Last but not least, giving the label eachs customerid based on aggregated each RFM scores (115 ,555 ,111 , etc).
+
+- Champions 1-2, 1-2, 1-2
+- Can’t Lose Them 4-5, 1-2, 1-2
+- Hibernating 4-5, 3-5, 1-5
+- Lost 5, 3-5, 3-5
+- etc
+
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Class_Segment_Distribution.png)
 
+#### note: class and segment labeling depends on company business action.
 
-### Conclusion
 
+## Conclusion
+RFM method is so useful for solving Customer Segmentation problem because it depends on customer activity(Recency), customer transaction frequency(Frequency), and how big their spend their money(Monetary).
+from the segmentation result, we can treat the customer different way depend on the result. for example :
+- Best Customer : We can give them reward. They can become the early buyers when we have new products and also can promote the products too.
+- Loyal Customer : We can give them membership/loyalty program or recommended related product to upsell them and help to become best customers.
+- New Customer : Start building relationship to this customers and give them special offers to increase their activity
+- Cant Lose Them : bring them back and offer relevant promo. give them survey is great too.
+Again, it all depends on the Company business action.
 
