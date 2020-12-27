@@ -16,9 +16,7 @@ Set the class and the segment label of each customer and grouping into several s
 
 Since this dataset is a Unsupervised Learning Dataset, therefore i should cluster each customerID to process for further. in this case i labeling each customer id using RFM(Recency, Frequency, Monetary) method and find a way how to treat customer based on their segment depends business action.
 
-
 ## Highlights
-
 So this is the sample of dataset that i use in this project and the descriptive statistics table.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_sample.png) 
 
@@ -30,7 +28,6 @@ and the descriptive statistics table.
 - Since then there is no total amount table, i added the 'spend' column which from UnitPrice*Quantity
 In this dataframe the amount of customer from UK is so dominating, so i decide to separate those.
 
-
 ### UK Data
 in this section ill find which class is suitable for each customerID based on RFM Score and the way to determine the RFM score is :
 - Recency = Latest Transaction Date - Last Invoice Data
@@ -39,20 +36,16 @@ in this section ill find which class is suitable for each customerID based on RF
 and the the distribution plot of RFM value is like this.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/RFM_distribution.png)
 
-
 The RFM value is set now, so i change them into 5 rank score using quantile method. the lowest the score the better.
 after i get all of that, i sum up the rank value RFM to labeled which class is suit for each customer (Diamond, Platinum, Gold, Silver, Bronze).
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/class_score_distribution.png)
 
-
 Last but not least, giving the label eachs customerid based on aggregated each RFM scores (115 ,555 ,111 , etc).
-
 - Champions 1-2, 1-2, 1-2
 - Can’t Lose Them 4-5, 1-2, 1-2
 - Hibernating 4-5, 3-5, 1-5
 - Lost 5, 3-5, 3-5
 - etc
-
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Class_Segment_Distribution.png)
 
 #### note: class and segment labeling depends on company business action.
@@ -65,5 +58,6 @@ from the segmentation result, we can treat the customer different way depend on 
 - Loyal Customer : We can give them membership/loyalty program or recommended related product to upsell them and help to become best customers.
 - New Customer : Start building relationship to this customers and give them special offers to increase their activity
 - Cant Lose Them : bring them back and offer relevant promo. give them survey is great too.
+
 Again, it all depends on the Company business action.
 
