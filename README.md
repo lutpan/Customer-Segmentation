@@ -19,12 +19,22 @@ Since this dataset is a Unsupervised Learning Dataset, therefore i should cluste
 
 ## Highlights
 
-So this is the sample of dataset that i use in this project.
-![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_sample.png)
-and this is the descriptive statistics table.
+So this is the sample of dataset that i use in this project and the descriptive statistics table.
+![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_sample.png) 
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_statistical_value.png)
 
 - when i see the statistical table i got confused why there are negative values in Qantity and UnitPrice minimum value. So i assume that was canceled order and i drop them negative values.
 - i drop the missing values too
 - Since then there is no total amount table, i added the 'spend' column which from UnitPrice*Quantity
+In this dataframe the amount of customer from UK is so dominating, so i decide to separate those.
 
+### UK Data
+in this section ill find which class is suitable for each customerID based on RFM Score and the way to determine the RFM score is :
+* Recency = Latest Transaction Date - Last Invoice Data
+* Frequency = count of invoice no. of transaction
+* Monetary = Sum of total spend for each customer id
+![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/RFM_distribution.png)
+
+the RFM value is set now i change them into 5 rank score using quantile method. the lowest the score the better.
+after i get all of that, i sum up the rank value RFM to labeled which class is suit for each customer (Diamond, Platinum, Gold, Silver, Bronze).
+![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/rfm_uk_sample_with_class.png)
