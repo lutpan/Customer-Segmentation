@@ -18,3 +18,5 @@ Set the class and the segment label of each customer and grouping into several s
 Since this dataset is a Unsupervised Learning Dataset, therefore i should cluster each customerID to process for further. in this case i labeling each customer id using RFM(Recency, Frequency, Monetary) method and find a way how to treat customer based on their segment depends business action.
 
 ## Highlights
+
+!(https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_sample.png)
