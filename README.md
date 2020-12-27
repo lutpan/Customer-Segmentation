@@ -23,10 +23,10 @@ So this is the sample of dataset that i use in this project and the descriptive 
 and the descriptive statistics table.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_statistical_value.png)
 
-- when i see the statistical table i got confused why there are negative values in Qantity and UnitPrice minimum value. So i assume that was canceled order and i drop them negative values.
-- i drop the missing values too
-- Since then there is no total amount table, i added the 'spend' column which from UnitPrice*Quantity
-In this dataframe the amount of customer from UK is so dominating, so i decide to separate those.
+- When i see the statistical table i got confused why there are negative values in Qantity and UnitPrice minimum value. So i assume that was canceled order and i drop them negative values.
+- I drop the missing values too
+- Since then there is no total amount column, i added the 'spend' column which from UnitPrice*Quantity
+- Amount of customers from UK is so dominating, so i decide to separate those.
 
 ### UK Data
 in this section ill find which class is suitable for each customerID based on RFM Score and the way to determine the RFM score is :
