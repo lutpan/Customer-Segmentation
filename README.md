@@ -33,14 +33,15 @@ in this section ill find which class is suitable for each customerID based on RF
 - Recency = Latest Transaction Date - Last Invoice Data
 - Frequency = count of invoice no. of transaction
 - Monetary = Sum of total spend for each customer id
+
 and the the distribution plot of RFM value is like this.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/RFM_distribution.png)
 
-The RFM value is set now, so i change them into 5 rank score using quantile method. the lowest the score the better.
+The RFM value is set, so i change them into 5 rank score using quantile method. the lowest the score the better.
 after i get all of that, i sum up the rank value RFM to labeled which class is suit for each customer (Diamond, Platinum, Gold, Silver, Bronze).
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/class_score_distribution.png)
 
-Last but not least, giving the label eachs customerid based on aggregated each RFM scores (115 ,555 ,111 , etc).
+Last but not least, giving the label eachs CustomerID by combining each RFM scores (115 ,555 ,111 , etc).
 - Champions 1-2, 1-2, 1-2
 - Can’t Lose Them 4-5, 1-2, 1-2
 - Hibernating 4-5, 3-5, 1-5
@@ -50,8 +51,6 @@ Last but not least, giving the label eachs customerid based on aggregated each R
 
 #### note: class and segment labeling depends on company business action.
 
-
-## Conclusion
 RFM method is so useful for solving Customer Segmentation problem because it depends on customer activity(Recency), customer transaction frequency(Frequency), and how big their spend their money(Monetary).
 from the segmentation result, we can treat the customer different way depend on the result. for example :
 - Best Customer : We can give them reward. They can become the early buyers when we have new products and also can promote the products too.
