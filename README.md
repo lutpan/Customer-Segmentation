@@ -23,8 +23,8 @@ So this is the sample of dataset that i use in this project and the descriptive 
 and the descriptive statistics table.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_statistical_value.png)
 
-- When i see the statistical table i got confused why there are negative values in Qantity and UnitPrice minimum value. So i assume that was canceled order and i drop them negative values.
-- I drop the missing values too
+- When i see the statistical table, there are negative values in Quantity and UnitPrice minimum value. So i assume that was canceled order or return items.
+- I drop the missing values
 - Since then there is no total amount column, i added the 'spend' column which from UnitPrice*Quantity
 - Amount of customers from UK is so dominating, so i decide to separate those.
 
