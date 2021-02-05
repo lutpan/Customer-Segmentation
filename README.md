@@ -24,7 +24,7 @@ and the descriptive statistics table.
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/df_statistical_value.png)
 
 - When i see the statistical table, there are negative values in Quantity and UnitPrice minimum value. So i assume that was canceled order or return items.
-- I drop the missing values
+- I drop all missing values in Description column and change missing values in CustomerID column as 'Anonymous'
 - Since then there is no total amount column, i added the 'spend' column which from UnitPrice*Quantity
 - Amount of customers from UK is so dominating, so i decide to separate those.
 
@@ -33,9 +33,6 @@ in this section ill find which class is suitable for each customerID based on RF
 - Recency = Latest Transaction Date - Last Invoice Data
 - Frequency = count of invoice no. of transaction
 - Monetary = Sum of total spend for each customer id
-
-and the the distribution plot of RFM value is like this.
-![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/RFM_distribution.png)
 
 The RFM value is set, so i change them into 5 rank score using quantile method. the lowest the score the better.
 after i get all of that, i sum up the rank value RFM to labeled which class is suit for each customer (Diamond, Platinum, Gold, Silver, Bronze).
@@ -47,7 +44,14 @@ Last but not least, giving the label eachs CustomerID by combining each RFM scor
 - Hibernating 4-5, 3-5, 1-5
 - Lost 5, 3-5, 3-5
 - etc
-![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Class_Segment_Distribution.png)
+
+Bar Chart
+![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Bar%20Chart%20per%20Segment%20UK.png)
+
+
+Pie Chart
+![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Pie%20Chart%20Segment%20UK.png)
+
 
 #### note: class and segment labeling depends on company business action.
 
