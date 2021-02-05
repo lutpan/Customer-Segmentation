@@ -46,10 +46,12 @@ Last but not least, giving the label eachs CustomerID by combining each RFM scor
 - etc
 
 Bar Chart
+
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Bar%20Chart%20per%20Segment%20UK.png)
 
 
 Pie Chart
+
 ![](https://github.com/lutpan/Customer-Segmentation/blob/main/image/Pie%20Chart%20Segment%20UK.png)
 
 
